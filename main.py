@@ -4,7 +4,7 @@ import sys
 import os
 import telebot
 import re as regx
-from telebot import typez
+from telebot import types
 mezmurList = []
 menuList = []
 artistList = []
@@ -208,5 +208,4 @@ def menu(button_labels, columnSize):
             button, callback_data=button) for button in row]
         keyboard.row(*row_buttons)
     return keyboard
-
 bot.polling()

@@ -4,9 +4,7 @@ import sys
 import os
 import telebot
 import re as regx
-from telebot import types
-import http.server
-import socketserver
+from telebot import typez
 mezmurList = []
 menuList = []
 artistList = []
@@ -16,15 +14,6 @@ counter = 0
 counter_1 = 0
 query = 'https://wikimezmur.org/am'
 API_KEY = '6475088355:AAEhkaUpNVt-vFVlsa-wyUZVVHnH2EsPbxQ'
-port = 8004
-
-# This creates a simple web server that serves files in the current directory
-handler = http.server.SimpleHTTPRequestHandler
-
-# Use the socketserver module to create the server
-httpd = socketserver.TCPServer(("", port), handler)
-
-print(f"Serving on port {port}")
 
 request = re.get(
     "https://wikimezmur.org/am/Gospel_Singers").text
@@ -220,6 +209,4 @@ def menu(button_labels, columnSize):
         keyboard.row(*row_buttons)
     return keyboard
 
-
 bot.polling()
-httpd.serve_forever()

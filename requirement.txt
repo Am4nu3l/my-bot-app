@@ -2,6 +2,4 @@ beautifulsoup4
 requests
 pyTelegramBotAPI
 lxml
-flask
-gunicorn
 python-telegram-bot

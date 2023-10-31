@@ -73,7 +73,6 @@ def handle_callback_query(call):
             bot.send_message(call.message.chat.id, 'ዘማሪ ይምርጡ:',
                             reply_markup=menu(button_labels, buttons_per_row))
         counter_1+=1
-        bot.send_message(call.message.chat.id, f"you clicked"+str(call.data))
     elif(counter_1==1):
         for key,value in artist_id_name.items():
             if(str(value)==str(call.data)):

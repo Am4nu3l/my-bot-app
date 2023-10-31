@@ -3,3 +3,4 @@ requests
 pyTelegramBotAPI
 lxml
 python-telegram-bot
+mysql-connector-python

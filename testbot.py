@@ -1,9 +1,6 @@
 import mysql.connector
 import telebot
-import traceback
-from flask import Flask, request
 from telebot import types
-
 mezmurList = []
 menuList = []
 artist_id_name = {}
